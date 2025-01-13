@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkio - Encuentra tu Aparcamiento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="banner">
+        <p>¡Descarga la App y aparca a la primera! <a href="#descargar-app">Descargar</a></p>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imagenes/parkio_logo_map.png" alt="Logo Parkio">
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#como-funciona">Cómo Funciona</a></li>
+                <li><a href="#descargar-app">Descargar App</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="imagenes/carousel_image1.png" alt="Usuario encontrando aparcamiento en la app">
+                    <img src="imagenes/carousel_image2.png" alt="Aparcamiento en ciudad con app">
+                </div>
+            </div>
+            <div class="hero-content">
+                <h2>Encuentra tu Aparcamiento en la Vía Pública</h2>
+                <p>La manera más fácil y rápida de asegurarte un lugar para aparcar.</p>
+                <button onclick="scrollToSection('como-funciona')">Ver más</button>
+            </div>
+        </section>
+
+        <section id="como-funciona">
+            <h2>Cómo Funciona</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>Encuentra Rápidamente</h3>
+                    <p>Encuentra un aparcamiento cercano y asegúralo al instante.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Paga Fácilmente</h3>
+                    <p>Realiza el pago a través de la app de manera segura y sin complicaciones.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Recibe Notificaciones</h3>
+                    <p>Recibe alertas cuando tu sitio esté disponible y listo para ti.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="descargar-app" class="download-section">
+            <div class="download-content">
+                <img src="imagenes/phone_app.png" alt="App en teléfono" class="phone-image">
+                <div class="download-text">
+                    <h2>Descárgate la app</h2>
+                    <p>Encuentra aparcamientos de manera fácil y rápida desde tu móvil.</p>
+                    <div class="app-buttons">
+                        <a href="#"><img src="imagenes/appstore_button.png" alt="Download on the App Store"></a>
+                        <a href="#"><img src="imagenes/playstore_button.png" alt="Get it on Google Play"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta o sugerencia? Estamos aquí para ayudarte.</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                
+                    <h3>Teléfono</h3>
+                    <p>+34 123 456 789</p>
+                    <h3>Email</h3>
+                    <p>contacto@ParkFinder.com</p>
+                </div>
+                <form id="form-contacto" onsubmit="return validarFormulario()">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ParkFinder</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
